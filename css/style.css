@@ -26,9 +26,11 @@ body {
 }
 
 .wrapper {
-    /* margin: 20% 20% 20% 20%; */
     text-align: center;
     margin: 0 2% 0 2%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 h2 span {
@@ -38,15 +40,12 @@ h2 span {
 
 h2 {
     font-weight: 200;
-    width: 0 100% 0 100%;
 }
 
 .mission {
-    width: 308px;
-    height: 75px;
     text-align: center;
     line-height: 25px;
-    margin: 0 auto;
+    margin: 0 15%;
 }
 
 .all-Cards {
@@ -56,9 +55,6 @@ h2 {
 
 .card {
     background-color: white;
-    max-width: 331px;
-    height: 223px;
-    box-sizing: border-box;
     border-top-width: 4px;
     border-top-style: solid;
     padding: 0 0 5% 5%;
@@ -89,17 +85,20 @@ img {
     padding: 5% 10% 0 0;
 }
 
-@media only screen and (min-width: 1440px){
+@media only screen and (min-width: 1024px){
     .mission {
-        width: 501px;
-        height: 50px;
+        margin: 0 35%;
+        font-size: 19px;
+        line-height: 30px;
     }
 
     .all-Cards{
           display: grid;
           grid-template-columns: repeat(3, auto);
           grid-template-rows: repeat(3, auto);
+          grid-gap: 30px;
       }
+
 
       .card:nth-child(2){
           grid-column: 2/3;
@@ -125,5 +124,19 @@ img {
         align-self: center;
         justify-self: center;
         
+    }
+}
+
+
+@media screen and (min-width:1440px) {
+    .all-Cards {
+        width: 85%;
+        margin: 0 auto;
+        grid-gap: 50px;
+    }
+
+    .all-Cards p {
+        font-size: 20px;
+        padding-right: 15px;
     }
 }
