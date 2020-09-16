@@ -29,8 +29,7 @@ body {
     text-align: center;
     margin: 0 2% 0 2%;
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    padding-top: 40px;
 }
 
 h2 span {
@@ -60,7 +59,7 @@ h2 {
     padding: 0 0 5% 5%;
     box-shadow: 5px 10px 10px #888888;
     border-radius: 10px;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .card:nth-child(1) {
